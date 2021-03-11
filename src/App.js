@@ -5,6 +5,7 @@ import Color from "./Color";
 import Form from "./Form";
 
 import Colors from "./Colors";
+import RouterCalculator from "./RouterCalculator";
 function App() {
   const initialColors = {
     red: "#FF0000",
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <div className="App">
+      <RouterCalculator />
       <BrowserRouter>
         <Route exact path="/">
           <Colors colors={colors} />
